@@ -8,6 +8,8 @@ class Inpt < Formula
   depends_on "tree"
 
   def install
+    prefix.install Dir["*"]
+    
     bin.install "INPT/start_input.sh" => "start_input"
     bin.install "INPT/start_output.sh" => "start_output"
   end
