@@ -8,8 +8,8 @@ class Inpt < Formula
   depends_on "tree"
 
   def install
-    bin.install "start_input.sh" => "start_input"
-    bin.install "start_output.sh" => "start_output"
+    bin.install "INPT/start_input.sh" => "start_input"
+    bin.install "INPT/start_output.sh" => "start_output"
   end
 
   test do
