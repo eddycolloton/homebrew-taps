@@ -5,7 +5,7 @@ class Inpt < Formula
   sha256 "a857e619409c1b51c6743da7c96da73d728150e7ad0db6c9c6a0c25bc03c2be1"
   license ""
 
-  depends_on "bash" => :run
+  #depends_on "bash" => :run
 
   def install
     bin.install "INPT/start_input.sh" => "start_input"
