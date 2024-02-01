@@ -10,6 +10,8 @@ class Inpt < Formula
   def install
     bin.install "INPT/start_input.sh" => "start_input"
     bin.install "INPT/start_output.sh" => "start_output"
+
+    (prefix/"input_functions").install "INPT/input_functions"
   end
 
   test do
