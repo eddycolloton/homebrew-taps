@@ -11,11 +11,11 @@ class Inpt < Formula
     bin.install "INPT/start_input.sh" => "start_input"
     bin.install "INPT/start_output.sh" => "start_output"
 
-    Dir.glob("input_functions/**/*").each do |file|
+    Dir.glob("INPT/input_functions/**/*").each do |file|
       bin.install file if File.file?(file)
     end
 
-    Dir.glob("output_functions/**/*").each do |file|
+    Dir.glob("INPT/output_functions/**/*").each do |file|
       bin.install file if File.file?(file)
     end
   end
